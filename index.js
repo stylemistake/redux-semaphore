@@ -25,5 +25,10 @@ export function semaphore(resolvePattern, rejectPattern) {
       else if (rejectOn && rejectOn(action)) reject(action);
     };
     semaphores.add(semaphoreInstance);
-  })).then(() => semaphores.delete(semaphoreInstance));
+  }))
+  .then(() => semaphores.delete(semaphoreInstance))
+  .catch((error) => {
+    semaphores.delete(semaphoreInstance);
+    return Promise.reject(error);
+  });
 }
