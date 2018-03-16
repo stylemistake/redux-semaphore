@@ -1,0 +1,23 @@
+{
+  "name": "redux-semaphore",
+  "version": "1.0.0",
+  "description": "A way to wait for something to happen in redux",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcbrwn/redux-semaphore.git"
+  },
+  "keywords": [
+    "redux",
+    "redux-saga",
+    "wait",
+    "for",
+    "action"
+  ],
+  "author": "Danila Shutov <dcbrwn2@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcbrwn/redux-semaphore/issues"
+  },
+  "homepage": "https://github.com/dcbrwn/redux-semaphore#readme"
+}
