@@ -34,6 +34,7 @@ import {
     TERMINAL_PROCESS_ACTION
     // ...
 } from './constants/actionTypes';
+import {semaphore} from 'redux-semaphore';
 
 // You don't have to use async/await.
 // Good ol' semaphore().then will work too
