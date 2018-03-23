@@ -60,7 +60,7 @@ async function theProcess() {
     }
 
     // Also composition goodies from native Promise class will work
-    const [success, cancel] = await Promise.race([
+    const result = await Promise.race([
         semaphore(TERMINAL_PROCESS_ACTION),
         semaphore(PROCESS_CANCEL_ACTION),
     ]);

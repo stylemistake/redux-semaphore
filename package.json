@@ -1,6 +1,6 @@
 {
   "name": "redux-semaphore",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A way to wait for something to happen in redux",
   "main": "index.js",
   "repository": {
