@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) 2018 Danila Shutov
+ * SPDX-License-Identifier: MIT
+ */
+
 const semaphores = new Set();
 
 export function createSemaphoreMiddleware() {
@@ -40,12 +45,12 @@ export function semaphore(resolvePattern, rejectPattern) {
     };
     semaphores.add(semaphoreInstance);
   }))
-  .then(action => {
-    semaphores.delete(semaphoreInstance);
-    return action;
-  })
-  .catch(error => {
-    semaphores.delete(semaphoreInstance);
-    return Promise.reject(error);
-  });
+    .then(action => {
+      semaphores.delete(semaphoreInstance);
+      return action;
+    })
+    .catch(error => {
+      semaphores.delete(semaphoreInstance);
+      return Promise.reject(error);
+    });
 }

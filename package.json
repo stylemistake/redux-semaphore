@@ -1,11 +1,11 @@
 {
   "name": "redux-semaphore",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A way to wait for something to happen in redux",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcbrwn/redux-semaphore.git"
+    "url": "git+https://github.com/stylemistake/redux-semaphore.git"
   },
   "keywords": [
     "redux",
@@ -17,7 +17,7 @@
   "author": "Danila Shutov <dcbrwn2@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dcbrwn/redux-semaphore/issues"
+    "url": "https://github.com/stylemistake/redux-semaphore/issues"
   },
-  "homepage": "https://github.com/dcbrwn/redux-semaphore#readme"
+  "homepage": "https://github.com/stylemistake/redux-semaphore#readme"
 }
